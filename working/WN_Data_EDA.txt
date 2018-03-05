@@ -1,0 +1,125 @@
+TRAIN	
+	Date: 
+		-All dates between June - August 2007 - 2013
+		-95 unique dates
+		** Convert to data format
+
+	Address:
+		O'Hare airport and South Cota Ave. 750 & 542 respectively
+		rest are 1 314 then <185
+
+	Species: 
+		(6 secies listed)		
+		4.7k pipiens/restuasn
+		2.7k restuans & pipiens respectively
+		222 Terrrians
+		86 Salinarius
+		6 Tarsalis
+		1 Erraticus
+	Block:
+		same data as address
+	Street:
+		first glance seems to be similar class structure as address
+	Trap: 
+		first glance seems to be similar class structure as street
+	AddressNumberAndStreet:
+		same info as street and address
+	Lattitude:
+	Longitude:
+	AdressAccuracy:
+		Categories: 
+			8 4.6k
+			9 4k
+			5 1.8k
+			3 91
+	NumMosquitos:
+		1,2,50 have higest data points 2.3k, 1.3k, 1k respecively all rest < 1k
+	WnvPresent
+	 	0 9955
+	 	1 551
+
+TEST
+	Id:
+		all unique (116293)
+	Date: convert to data format
+		-All data between June - August 2008 - 2012
+		-95 unique dates
+	Adress: 
+		same as train
+	Species:
+		Not much of a class imbalance like train data
+		(8 species listed)
+		PIPIENS/RESTUANS
+		RESTUANS
+		PIPIENS
+		SALINARIUS
+		TERRITANS
+		TARASALIS
+		UNSPECIFIED CULEX
+		CULEX ERRATICUS
+	Block: 
+		same as train
+	Street: 
+		same as train
+	Trap:
+		same as train
+	AddressNumberAndStreet:
+		same sas train
+	Latitude:
+	Longitude:
+	AdressAccuracy:
+		More data points but same categories and stratification as train
+
+WEATHER
+	Station: 2 types given
+		1 - no precipitation data
+		2 - precipitation data
+	Date: seem to be equaly distributed; convert to date type (check)
+	Tmax:
+	Tmin:
+	Tavg: convert 'M' to 0 (check)
+	Depart:
+	DewPoint:
+	WetBulb: convert 'M' to 0 (check)
+	Heat: covert 'M' to 0 (check)
+	Cool: covert 'M' to 0 (check)
+	Sunrise: convert '-' to 0 (check)
+	Sunset: convert '-' to 0 (check)
+	CodeSum: removed
+	Depth: removed
+	Waterl: removed
+	Snowfall: removed
+	PrecipTotal: Convert 'T' to 0 (318) an 'M' to 0 --'T' needed leading and trailing spaces stripped (check)
+ 	StnPressure: Remove rows with 'M' or turn to 0 (check)
+	SeaLevel: covert 'M' to zero (check)
+	ResultSpeed:
+	ResultDir:
+	AvgSpeed:
+	NEW COLUMN:
+		RH (relative hudity) calculate after cleanin up columsn above
+
+SPRAY
+	Date: 
+		2013 and 2011 only
+		2013 has only 8 specific spraying days 
+		2011 has 2 specific spray days
+	Time:
+		-mostly random times 
+		-541 7:44:32 isnull suggests they are unique
+	Lattitude:
+	Longitude:
+
+SAMPLE SUBISSION
+	Id:
+		116k unique values
+	WnvPresent: 
+		1 unique value (Yes = 1)
+
+
+
+
+
+
+
+
+	
