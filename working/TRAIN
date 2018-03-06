@@ -1,3 +1,5 @@
+
+
 TRAIN	
 	Date: 
 		-All dates between June - August 2007 - 2013
@@ -63,7 +65,6 @@ TEST
 		same as train
 	Trap:
 		same as train
-        -Need to understand any meaning behind ex. T094B & T094
 	AddressNumberAndStreet:
 		same sas train
 	Latitude:
