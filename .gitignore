@@ -1,0 +1,9 @@
+*.csv
+*.html
+*.pdf
+*.py
+*.R
+*.Rmd
+*.rds
+*.txt
+.ipynb_checkpoints
